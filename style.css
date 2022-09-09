@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins"
+}
+
+body {
+    background-image: url(https://w0.peakpx.com/wallpaper/567/480/HD-wallpaper-doraemon-black-cartoon.jpg);
+    background-color: #000;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 4%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-size: cover */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cigaratee {
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+}
+
+.container .cigaratee span {
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.76em;
+    text-shadow: 0.2px 5px rgba(0, 0, 0, 0.25);
+    transform: translate(-50px, -50px) rotateX(calc(var(--i)*36deg)) translateZ(55px);
+}
+
+.container .cigaratee span i {
+    font-size: 40px;
+    color: rgb(38, 186, 231);
+    font-style: normal;
+}
+
+.container .cigaratee span i:first-child:after {
+    Content: "am";
+    color: rgb(247, 243, 8);
+}
+
+.container .cigaratee span i:last-child {
+    color: rgb(255, 9, 9);
+    filter: blur(5px);
+    text-shadow: -4px 0 2px #000, 8px 0 20px rgb(255, 9, 9), 8px 0 24px rgb(255, 9, 9), 8px 0 0 #222, 12px 0 rgb(255, 20, 20), 12px 0 rgb(255, 20, 20);
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateX(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateX(360deg);
+    }
+}
