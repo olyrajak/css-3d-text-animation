@@ -33,12 +33,12 @@ main {
     align-items: center;
 }
 
-.container .cigaratee {
+.container .doreamon {
     transform-style: preserve-3d;
     animation: animate 4s linear infinite;
 }
 
-.container .cigaratee span {
+.container .doreamon span {
     position: absolute;
     color: #fff;
     font-size: 2rem;
@@ -55,12 +55,12 @@ main {
     font-style: normal;
 }
 
-.container .cigaratee span i:first-child:after {
+.container .doreamon span i:first-child:after {
     Content: "am";
     color: rgb(247, 243, 8);
 }
 
-.container .cigaratee span i:last-child {
+.container .doreamon span i:last-child {
     color: rgb(255, 9, 9);
     filter: blur(5px);
     text-shadow: -4px 0 2px #000, 8px 0 20px rgb(255, 9, 9), 8px 0 24px rgb(255, 9, 9), 8px 0 0 #222, 12px 0 rgb(255, 20, 20), 12px 0 rgb(255, 20, 20);
